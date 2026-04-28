@@ -20,7 +20,7 @@
 | AI worker hours | 0.7h | 3.4h | 11.6h | 11.6h |
 | AI concurrency hours | 0.7h | 6.9h | 39.9h | 39.9h |
 | Interactive sessions | 0 | 2 | 45 | 45 |
-| Worker sessions | 24 | 101 | 253 | 253 |
+| Worker sessions | 20 | 101 | 253 | 253 |
 
 _Screen time from systemd-logind session events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -68,5 +68,5 @@ _Model savings are modest because ~92.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-28 11:00 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-28 12:00 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
