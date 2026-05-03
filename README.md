@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Linux) | 24h | 24h | 72h | ~3,654h* |
 | User AI session hours | 0.0h | 7.3h | 8.8h | 8.8h |
-| AI worker hours | 0.0h | 3.0h | 3.4h | 3.4h |
-| AI concurrency hours | 0.0h | 14.4h | 17.3h | 17.3h |
+| AI worker hours | 0.0h | 2.9h | 3.4h | 3.4h |
+| AI concurrency hours | 0.0h | 14.2h | 17.3h | 17.3h |
 | Interactive sessions | 0 | 2 | 2 | 2 |
-| Worker sessions | 0 | 86 | 101 | 101 |
+| Worker sessions | 0 | 83 | 101 | 101 |
 
 _Screen time from systemd-logind session events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -30,16 +30,16 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 2,757 | 3K | 1.1M | 505.4M | $1,549.69 | $6,824.04 | $0.00 |
+| claude-opus-4-6 | 2,728 | 3K | 1.1M | 503.7M | $1,532.54 | $6,801.14 | $0.00 |
 | claude-sonnet-4-6 | 4,672 | 5K | 986K | 296.1M | $215.76 | $799.63 | $414.65 |
 | big-pickle | 395 | 1.8M | 112K | 29.7M | $17.35 | $0.00 | $81.15 |
-| **Total** | **7,824** | **1.8M** | **2.2M** | **831.3M** | **$1,782.80** | **$7,623.67** | **$495.80** |
+| **Total** | **7,795** | **1.8M** | **2.2M** | **829.6M** | **$1,765.65** | **$7,600.77** | **$495.80** |
 
-_903.2M total tokens processed. 92% cache hit rate._
+_900.8M total tokens processed. 92.1% cache hit rate._
 
-_$8,119.46 total saved ($7,623.67 caching + $495.80 model routing vs all-Opus)._
+_$8,096.57 total saved ($7,600.77 caching + $495.80 model routing vs all-Opus)._
 
-_Model savings are modest because ~92% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~92.1% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -68,5 +68,5 @@ _Model savings are modest because ~92.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-03 17:00 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-03 18:00 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
