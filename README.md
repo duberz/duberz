@@ -16,10 +16,10 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Linux) | 24h | 24h | 72h | ~3,654h* |
-| User AI session hours | 0.0h | 3.2h | 8.9h | 8.9h |
+| User AI session hours | 0.0h | 2.5h | 8.9h | 8.9h |
 | AI worker hours | 0.0h | 0.0h | 3.4h | 3.4h |
-| AI concurrency hours | 0.7h | 6.4h | 18.7h | 18.7h |
-| Interactive sessions | 1 | 2 | 2 | 2 |
+| AI concurrency hours | 0.0h | 5.7h | 18.7h | 18.7h |
+| Interactive sessions | 0 | 2 | 2 | 2 |
 | Worker sessions | 0 | 0 | 101 | 101 |
 
 _Screen time from systemd-logind session events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -32,12 +32,12 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 2,753 | 3K | 1.1M | 507.2M | $1,547.62 | $6,848.00 | $0.00 |
 | claude-sonnet-4-6 | 5,026 | 5K | 1.0M | 309.5M | $233.08 | $835.67 | $435.92 |
-| big-pickle | 221 | 798K | 43K | 14.8M | $8.62 | $0.00 | $37.49 |
-| **Total** | **8,000** | **807K** | **2.2M** | **831.6M** | **$1,789.32** | **$7,683.68** | **$473.42** |
+| big-pickle | 123 | 660K | 23K | 8.9M | $6.16 | $0.00 | $25.16 |
+| **Total** | **7,902** | **669K** | **2.2M** | **825.7M** | **$1,786.86** | **$7,683.68** | **$461.09** |
 
-_905.4M total tokens processed. 91.8% cache hit rate._
+_899.4M total tokens processed. 91.8% cache hit rate._
 
-_$8,157.09 total saved ($7,683.68 caching + $473.42 model routing vs all-Opus)._
+_$8,144.76 total saved ($7,683.68 caching + $461.09 model routing vs all-Opus)._
 
 _Model savings are modest because ~91.8% of tokens are cache reads, where price differences between models are small._
 
@@ -68,5 +68,5 @@ _Model savings are modest because ~92.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-06 18:00 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-06 19:00 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
