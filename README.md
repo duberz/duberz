@@ -31,12 +31,12 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 1,573 | 1K | 587K | 320.5M | $995.99 | $4,327.33 | $0.00 |
-| claude-sonnet-4-6 | 580 | 690 | 142K | 24.1M | $30.12 | $65.16 | $37.52 |
-| **Total** | **2,153** | **2K** | **730K** | **344.6M** | **$1,026.11** | **$4,392.49** | **$37.52** |
+| claude-sonnet-4-6 | 576 | 686 | 141K | 23.8M | $29.97 | $64.36 | $37.11 |
+| **Total** | **2,149** | **2K** | **729K** | **344.3M** | **$1,025.96** | **$4,391.69** | **$37.11** |
 
-_376.0M total tokens processed. 91.7% cache hit rate._
+_375.7M total tokens processed. 91.7% cache hit rate._
 
-_$4,430.02 total saved ($4,392.49 caching + $37.52 model routing vs all-Opus)._
+_$4,428.80 total saved ($4,391.69 caching + $37.11 model routing vs all-Opus)._
 
 _Model savings are modest because ~91.7% of tokens are cache reads, where price differences between models are small._
 
